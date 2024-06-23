@@ -63,7 +63,7 @@ a {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    max-width: 100vh;
+    max-width: 100vw;
 }
 
 #aboutMe {
