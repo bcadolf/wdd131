@@ -60,7 +60,7 @@ footer {
         display: none;
     }
 
-    #mini:after {
+    #mini::after {
         content: '🌦️';
     }
 
