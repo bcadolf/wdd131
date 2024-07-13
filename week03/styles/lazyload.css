@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    animation: fade 30s;
+}
+
+main {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
