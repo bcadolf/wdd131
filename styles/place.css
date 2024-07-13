@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text: #000000;
+    --text-alternate: #fff;
+    --primary: #ee392b;
+    --secondary: #b07c6d;
+    --accent: #63f4ba;
+
+}
+
+body {
+    background: var(--background);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text);
+    background: var(--primary);
+    padding: 1rem;
+    border-bottom: 5px solid var(--accent);
+}
+
+.hero img {
+    width: 100%;
+}
+
+section {
+    background: var(--secondary);
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    background: var(--accent);
+}
+
+@media screen and (min-width: 400px) {}
