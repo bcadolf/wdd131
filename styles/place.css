@@ -31,6 +31,13 @@ h1 {
 section {
     background: var(--secondary);
     text-align: center;
+    border: 2px solid var(--accent);
+}
+
+#icon {
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
@@ -43,4 +50,45 @@ footer {
     background: var(--accent);
 }
 
-@media screen and (min-width: 400px) {}
+@media screen and (min-width: 400px) {
+
+    #icon {
+        display: none;
+    }
+
+    #mini:after {
+        content: '🌦️';
+    }
+
+    .hero {
+        position: static;
+        height: 600px;
+    }
+
+    .hero img {
+        position: absolute;
+        height: 600px;
+
+    }
+
+    section {
+        position: relative;
+        background: #b07c6d66;
+        max-width: fit-content;
+    }
+
+    #weather {
+        bottom: 10px;
+        left: 80%;
+    }
+
+    main {
+        height: 600px;
+    }
+
+    footer {
+        position: relative;
+        padding: 25px;
+        border: 2px solid var(--accent);
+    }
+}
