@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text: #000000;
+    --text-alternate: #fbfbfe;
+    --primary: #1136b9;
+    --secondary: #4b29f6ba;
+    --accent: #0de250;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-alternate);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--text-alternate);
+    position: absolute;
+    top: 8px;
+    right: 20px;
+
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.open {
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    color: var(--text-alternate);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.active a {
+    text-decoration: double var(--accent);
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#menu::before {
+    display: block;
+    float: right;
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "⍑";
+}
+
+main {
+    width: 90vw;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    place-items: center;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    border: 1px solid var(--accent);
+    background: var(--secondary);
+    width: 100%;
+    height: 100%;
+}
+
+td,
+th {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+
+
+
+footer {
+    background: var(--secondary);
+    color: var(--text-alternate);
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+}
