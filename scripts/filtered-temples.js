@@ -111,10 +111,17 @@ function loadTempleCardples(filter) {
 }
 
 document.getElementById("home").addEventListener("click", () => loadTempleCardples(() => true));
-document.getElementById("old").addEventListener("click", () => loadTempleCardples(temple => parseInt(temple.dedicated.slice(0, 4))) < 1900);
-document.getElementById("new").addEventListener("click", () => loadTempleCardples(temple => parseInt(temple.dedicated.slice(0, 4))) > 2000);
+document.getElementById("old").addEventListener("click", () => loadTempleCardples(temple => (parseInt(temple.dedicated.slice(0, 4)))) < 1900);
+document.getElementById("new").addEventListener("click", () => loadTempleCardples(temple => (parseInt(temple.dedicated.slice(0, 4)))) > 2000);
 document.getElementById("large").addEventListener("click", () => loadTempleCardples(temple => temple.area > 90000));
 document.getElementById("small").addEventListener("click", () => loadTempleCardples(temple => temple.area < 10000));
 
 loadTempleCardples(() => true);
 
+const pageTitle = document.getElementById("pageTitle")
+
+document.getElementById("home").addEventListener("click", pageTitle.textContent = "Home")
+document.getElementById("old").addEventListener("click", pageTitle.textContent = "Old")
+document.getElementById("new").addEventListener("click", pageTitle.textContent = "New")
+document.getElementById("large").addEventListener("click", pageTitle.textContent = "Large")
+document.getElementById("small").addEventListener("click", pageTitle.textContent = "Small")
