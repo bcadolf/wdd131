@@ -118,10 +118,10 @@ document.getElementById("small").addEventListener("click", () => loadTempleCardp
 
 loadTempleCardples(() => true);
 
-const pageTitle = document.getElementById("pageTitle")
+const pageTitle = document.getElementById("pageTitle");
 
-document.getElementById("home").addEventListener("click", pageTitle.textContent = "Home")
-document.getElementById("old").addEventListener("click", pageTitle.textContent = "Old")
-document.getElementById("new").addEventListener("click", pageTitle.textContent = "New")
-document.getElementById("large").addEventListener("click", pageTitle.textContent = "Large")
-document.getElementById("small").addEventListener("click", pageTitle.textContent = "Small")
+document.getElementById("home").addEventListener("click", pageTitle.textContent = "Home");
+document.getElementById("old").addEventListener("click", pageTitle.textContent = "Old");
+document.getElementById("new").addEventListener("click", pageTitle.textContent = "New");
+document.getElementById("large").addEventListener("click", pageTitle.textContent = "Large");
+document.getElementById("small").addEventListener("click", pageTitle.textContent = "Small");
