@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Product Review Assignment</title>
+    <meta name="author" content="Brandon Adolf">
+    <meta name="description" content="Product Review Form Assinment">
+
+    <link href="styles/form.css" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+
+    <!-- FONT IMPORT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- END FONT -->
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="name">Product Name</label>
+            <select name="name" id="name" required>
+                <option value="placeholder" disabled>Select a Value</option>
+            </select>
+            <label for="rating">Overall Rating</label>
+            <div class="radio">
+                <input type="radio" name="rating" id="onestar" required>☆</input>
+                <input type="radio" name="rating" id="twostar" required>☆☆</input>
+                <input type="radio" name="rating" id="threestar" required>☆☆☆</input>
+                <input type="radio" name="rating" id="fourstar" required>☆☆☆☆</input>
+                <input type="radio" name="rating" id="fivestar" required>☆☆☆☆☆</input>
+            </div>
+            <label for="date">Date of Installation</label>
+            <input type="date" name="date" id="date" required>
+            <fieldset>
+                <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
+                <div><input type="checkbox" name="durability" id="durability" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div><input type="checkbox" name="easeofuse" id="easeofuse" value="easeofuse">
+                    <label for="easeofuse">Ease of Use</label>
+                </div>
+                <div><input type="checkbox" name="performance" id="performance" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div><input type="checkbox" name="design" id="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+            <label for="review">Written Review (Optional)</label>
+            <textarea name="review" id="review"></textarea>
+            <input type="submit" value="Send Your Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Brandon Adolf - Virginia, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
