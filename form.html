@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Product Review Assignment</title>
     <meta name="author" content="Brandon Adolf">
@@ -29,15 +29,20 @@
         <form method="get" action="review.html">
             <label for="name">Product Name</label>
             <select name="name" id="name" required>
-                <option value="placeholder" disabled>Select a Value</option>
+                <option value="" disabled>Select a Value</option>
             </select>
-            <label for="rating">Overall Rating</label>
+            <legend for="rating">Overall Rating</legend>
             <div class="radio">
-                <input type="radio" name="rating" id="onestar" required>☆</input>
-                <input type="radio" name="rating" id="twostar" required>☆☆</input>
-                <input type="radio" name="rating" id="threestar" required>☆☆☆</input>
-                <input type="radio" name="rating" id="fourstar" required>☆☆☆☆</input>
-                <input type="radio" name="rating" id="fivestar" required>☆☆☆☆☆</input>
+                <input type="radio" name="rating" id="onestar" required value>
+                <label for="onestar">☆</label>
+                <input type="radio" name="rating" id="twostar" required>
+                <label for="twostar">☆☆</label>
+                <input type="radio" name="rating" id="threestar" required>
+                <label for="threestar">☆☆☆</label>
+                <input type="radio" name="rating" id="fourstar" required>
+                <label for="fourstar">☆☆☆☆</label>
+                <input type="radio" name="rating" id="fivestar" required>
+                <label for="fivestar">☆☆☆☆☆</label>
             </div>
             <label for="date">Date of Installation</label>
             <input type="date" name="date" id="date" required>
