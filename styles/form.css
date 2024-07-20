@@ -48,6 +48,10 @@ form {
 
 fieldset {
     border: none;
+}
+
+.checkbox {
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

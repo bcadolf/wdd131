@@ -31,22 +31,24 @@
             <select name="name" id="name" required>
                 <option value="" disabled>Select a Value</option>
             </select>
-            <legend for="rating">Overall Rating</legend>
-            <div class="radio">
-                <input type="radio" name="rating" id="onestar" required value>
-                <label for="onestar">☆</label>
-                <input type="radio" name="rating" id="twostar" required>
-                <label for="twostar">☆☆</label>
-                <input type="radio" name="rating" id="threestar" required>
-                <label for="threestar">☆☆☆</label>
-                <input type="radio" name="rating" id="fourstar" required>
-                <label for="fourstar">☆☆☆☆</label>
-                <input type="radio" name="rating" id="fivestar" required>
-                <label for="fivestar">☆☆☆☆☆</label>
-            </div>
+            <fieldset>
+                <legend for="rating">Overall Rating</legend>
+                <div class="radio">
+                    <input type="radio" name="rating" id="onestar" required value>
+                    <label for="onestar">☆</label>
+                    <input type="radio" name="rating" id="twostar" required>
+                    <label for="twostar">☆☆</label>
+                    <input type="radio" name="rating" id="threestar" required>
+                    <label for="threestar">☆☆☆</label>
+                    <input type="radio" name="rating" id="fourstar" required>
+                    <label for="fourstar">☆☆☆☆</label>
+                    <input type="radio" name="rating" id="fivestar" required>
+                    <label for="fivestar">☆☆☆☆☆</label>
+                </div>
+            </fieldset>
             <label for="date">Date of Installation</label>
             <input type="date" name="date" id="date" required>
-            <fieldset>
+            <fieldset class="checkbox">
                 <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
                 <div><input type="checkbox" name="durability" id="durability" value="durability">
                     <label for="durability">Durability</label>
