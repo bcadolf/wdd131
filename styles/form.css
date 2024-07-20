@@ -35,7 +35,7 @@ form {
     border: 2px solid #0ae;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 90%;
     padding: 10px;
     margin: auto;
 }
