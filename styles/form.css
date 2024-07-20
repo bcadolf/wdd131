@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 480px;
     margin: 5px auto;
 }
 
@@ -29,13 +29,12 @@ h1 {
     padding: 5px;
 }
 
-
 form {
     background: #66eeee9e;
     border: 2px solid #0ae;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 480px;
     padding: 10px;
     margin: auto;
 }
@@ -64,14 +63,28 @@ div label {
     font-weight: 400;
 }
 
-@media screen and (min-width:(480px)) {
+input[type=submit] {
+    width: fit-content;
+    margin: 5px auto;
+}
 
-    form {
-        width: 480px;
-    }
+footer {
+    color: #3e0b0b;
+    background: #0ae;
+    text-align: center;
+    width: 480px;
+    margin: 5px auto;
+}
 
-    header {
-        width: 480px;
-    }
+select,
+input[type=date] {
+    width: fit-content;
+    margin: 5px;
+}
 
+p {
+    background: #66eeee9e;
+    border: 2px solid #0ae;
+    width: 100%;
+    margin: auto;
 }
