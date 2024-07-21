@@ -20,6 +20,10 @@ const about = document.getElementById("about");
 const journal = document.getElementById("journal");
 const projects = document.getElementById("projects");
 
+if (localStorage.getItem("title") == null) {
+    localStorage.setItem("title", home.textContent)
+}
+
 activePage.textContent = localStorage.getItem("title")
 
 home.addEventListener("click", () => {

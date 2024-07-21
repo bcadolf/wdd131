@@ -68,6 +68,10 @@ h1 {
     list-style: none;
 }
 
+.open {
+    display: flex;
+}
+
 nav a {
     color: var(--secondary-color);
     padding: 1rem;
