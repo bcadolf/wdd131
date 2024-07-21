@@ -30,9 +30,11 @@ header {
 }
 
 h1,
+h2,
 h3 {
     text-align: center;
 }
+
 
 h1 {
     color: var(--background);
@@ -150,6 +152,11 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+    }
+
+    #activePage {
+        grid-row: 1;
+        grid-column: 1;
     }
 
     section {
